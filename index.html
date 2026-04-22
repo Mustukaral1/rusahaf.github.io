@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Ru Sahaf Cafe — Doğubayazıt'ın sahaf kafe deneyimi. Bir kitap, bir kahve, bir nefes." />
+  <title>Ru Sahaf Cafe · Doğubayazıt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="app">
+    <nav data-testid="navbar" class="navbar" id="navbar">
+      <div class="container nav-inner">
+        <a href="#hero" data-testid="navbar-logo" class="nav-logo" aria-label="Ru-Sahaf Cafe ana sayfa">
+          <span class="nav-logo-text">Ru-Sahaf Cafe</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#hakkimizda" data-testid="nav-hakkimizda">Hakkımızda</a></li>
+          <li><a href="#yorumlar" data-testid="nav-yorumlar">Yorumlar</a></li>
+          <li><a href="#menu" data-testid="nav-menu">Menü</a></li>
+          <li><a href="#iletisim" data-testid="nav-iletisim">İletişim</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section id="hero" data-testid="hero-section" class="hero">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-dark" aria-hidden="true"></div>
+        <div class="hero-glow amber-glow-intense" aria-hidden="true"></div>
+        <div class="hero-vignette" aria-hidden="true"></div>
+        <div class="hero-content">
+          <div data-testid="hero-logo" class="hero-logo">
+            <img src="./rusahaf.jpg" alt="Ru-Sahaf Cafe logosu" class="hero-logo-image" />
+          </div>
+          <div class="hero-kicker">
+            <span>Sahaf · Cafe · Doğubayazıt</span>
+          </div>
+          <h1 data-testid="hero-title" class="hero-title">Bir kitap,<br>bir kahve,<br>bir nefes.</h1>
+          <p data-testid="hero-subtitle" class="hero-subtitle">Doğubayazıt'ın sahaf kafe deneyimi — since 2021</p>
+          <div class="hero-actions">
+            <a href="#hakkimizda" data-testid="hero-cta-about" class="btn-outline">Mekânı Keşfet</a>
+          </div>
+        </div>
+        <a href="#hakkimizda" data-testid="hero-scroll-indicator" aria-label="Aşağı kaydır" class="scroll-indicator">
+          <i data-lucide="chevron-down"></i>
+        </a>
+      </section>
+
+      <section id="hakkimizda" data-testid="about-section" class="about paper-texture">
+        <div class="container">
+          <div class="divider-ornament reveal mb-16">Hakkımızda</div>
+          <div class="about-grid">
+            <div class="reveal">
+              <div class="about-image-wrap">
+                <div class="about-border-one" aria-hidden="true"></div>
+                <div class="about-border-two" aria-hidden="true"></div>
+                <img src="https://images.pexels.com/photos/32876142/pexels-photo-32876142.jpeg" alt="Ru Sahaf Cafe iç mekan" class="about-image" data-testid="about-image" />
+                <div class="about-tag">
+                  <span>Doğubayazıt · Est. 2021</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="reveal">
+              <div class="about-kicker">Bir sığınak</div>
+              <h2 data-testid="about-heading" class="about-heading">Kitapların, kedilerin ve<br><span>sıcak kahvenin</span> buluştuğu yer.</h2>
+              <p data-testid="about-text" class="about-text">Ru Sahaf Cafe; kitapların, kedilerin ve sıcak kahvenin bir araya geldiği, Doğubayazıt'ın kalbindeki sakin bir sığınak.</p>
+              <p class="about-text">Vegan ve vejeteryan seçenekleriyle herkesi kucaklayan; alt katta okuma salonu, üst katta kediler ve kitaplarla dolu şirin bir mekânız.</p>
+
+              <div class="feature-grid" data-testid="about-features">
+                <div data-testid="feature-books" class="feature-card">
+                  <i data-lucide="book-open"></i>
+                  <h3>Kitap & Sahaf</h3>
+                  <p>Raflar dolusu ikinci el kitaplar, şiirler ve unutulmuş hikâyeler.</p>
+                </div>
+                <div data-testid="feature-vegan" class="feature-card">
+                  <i data-lucide="leaf"></i>
+                  <h3>Vegan & Vejetaryen</h3>
+                  <p>Herkesi kucaklayan, özenle hazırlanmış bitki bazlı ikramlar.</p>
+                </div>
+                <div data-testid="feature-cats" class="feature-card">
+                  <i data-lucide="cat"></i>
+                  <h3>Kedi Dostu</h3>
+                  <p>Üst katın sakin sakinleri, kitapların arasında uyuyakalır.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="yorumlar" data-testid="reviews-section" class="reviews">
+        <div class="reviews-ambient amber-glow" aria-hidden="true"></div>
+        <div class="container reviews-inner">
+          <div class="divider-ornament reveal mb-10" style="color:#c8932a;">Müşteri Yorumları</div>
+          <h2 data-testid="reviews-heading" class="reveal reviews-heading">Bizim hakkımızda<br>ne dediler?</h2>
+
+          <div class="reviews-stage">
+            <i data-lucide="quote" class="quote-mark"></i>
+            <article data-testid="review-slide-0" class="review-slide active">
+              <p>“Günün stresini atabileceğiniz mükemmel personelleriyle Doğubayazıt'ın en güzel cafesi.”</p>
+              <div class="divider-ornament" style="color:#c8932a;"><span data-testid="review-author-0">Mehmet Cavbin</span></div>
+            </article>
+            <article data-testid="review-slide-1" class="review-slide">
+              <p>“Nezih, ferah bir ortam. Alt katta okuma salonu, üst katta kedi ve kitaplarla dolu şirin bir mekân.”</p>
+              <div class="divider-ornament" style="color:#c8932a;"><span data-testid="review-author-1">Adem Özer</span></div>
+            </article>
+            <article data-testid="review-slide-2" class="review-slide">
+              <p>“İçinde sıcak kahvenle seni karşılayan bir şiir ve hayvandostu sahaf kardeşimiz Baran varsa — doğru yerdesinizdir.”</p>
+              <div class="divider-ornament" style="color:#c8932a;"><span data-testid="review-author-2">Sadık Şentürk</span></div>
+            </article>
+          </div>
+
+          <div class="reviews-controls">
+            <button type="button" data-testid="reviews-prev-btn" aria-label="Önceki yorum" id="reviews-prev"><i data-lucide="chevron-left"></i></button>
+            <div class="review-dots">
+              <button type="button" data-testid="reviews-dot-0" aria-label="1. yoruma git" class="active" data-review-dot="0"></button>
+              <button type="button" data-testid="reviews-dot-1" aria-label="2. yoruma git" data-review-dot="1"></button>
+              <button type="button" data-testid="reviews-dot-2" aria-label="3. yoruma git" data-review-dot="2"></button>
+            </div>
+            <button type="button" data-testid="reviews-next-btn" aria-label="Sonraki yorum" id="reviews-next"><i data-lucide="chevron-right"></i></button>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" data-testid="menu-section" class="menu">
+        <div class="container">
+          <div class="divider-ornament reveal mb-10">Menü & İkramlar</div>
+          <div class="menu-head reveal">
+            <h2>Küçük <span>ikramlar</span>, büyük anılar.</h2>
+            <p>Bir fincan kahve, birkaç sayfa ve mırıldayan bir kedi — bazen yeterli olan bu.</p>
+          </div>
+
+          <div class="menu-grid">
+            <article data-testid="menu-item-coffee" class="reveal menu-card">
+              <div class="menu-image-wrap">
+                <img src="https://images.pexels.com/photos/14198834/pexels-photo-14198834.jpeg" alt="Türk Kahvesi">
+                <div class="menu-overlay"></div>
+                <div class="menu-meta"><span>Kahve</span></div>
+              </div>
+              <h3>Türk Kahvesi</h3>
+              <p>Odun ateşinden damıtılmış, köpüğü bol, eski usul.</p>
+            </article>
+            <article data-testid="menu-item-vegan" class="reveal menu-card">
+              <div class="menu-image-wrap">
+                <img src="https://images.unsplash.com/photo-1758610605872-3195caed0bdd" alt="Vegan İkramlar">
+                <div class="menu-overlay"></div>
+                <div class="menu-meta"><span>Mutfak</span></div>
+              </div>
+              <h3>Vegan İkramlar</h3>
+              <p>Yerel lezzetlerle hazırlanmış bitki bazlı tabaklar.</p>
+            </article>
+            <article data-testid="menu-item-books" class="reveal menu-card">
+              <div class="menu-image-wrap">
+                <img src="https://images.pexels.com/photos/33799079/pexels-photo-33799079.jpeg" alt="Sahaf Köşesi">
+                <div class="menu-overlay"></div>
+                <div class="menu-meta"><span>Atmosfer</span></div>
+              </div>
+              <h3>Sahaf Köşesi</h3>
+              <p>Eski kitaplar, kedi mırıltısı ve amber ışık.</p>
+            </article>
+          </div>
+
+          <p class="reveal menu-footnote">· Günlük değişen menü için Instagram'ı takip edin ·</p>
+        </div>
+      </section>
+
+      <section id="iletisim" data-testid="contact-section" class="contact">
+        <div class="contact-glow-one amber-glow" aria-hidden="true"></div>
+        <div class="contact-glow-two amber-glow" aria-hidden="true"></div>
+        <div class="container contact-inner">
+          <div class="divider-ornament reveal mb-10" style="color:#c8932a;">Ziyaret Edin</div>
+          <h2 data-testid="contact-heading" class="reveal contact-heading">Sizi kapıda bekliyoruz</h2>
+
+          <div class="contact-grid">
+            <div data-testid="contact-hours" class="reveal hours-card">
+              <div class="info-title"><i data-lucide="clock"></i><span>Çalışma Saatleri</span></div>
+              <ul>
+                <li><span>Pazartesi</span><strong>10:00 — 22:00</strong></li>
+                <li><span>Salı</span><strong>10:00 — 22:00</strong></li>
+                <li><span>Çarşamba</span><strong>10:00 — 22:00</strong></li>
+                <li><span>Perşembe</span><strong>10:00 — 22:00</strong></li>
+                <li><span>Cuma</span><strong>10:00 — 22:00</strong></li>
+                <li><span>Cumartesi</span><strong>10:00 — 22:00</strong></li>
+                <li><span>Pazar</span><strong>10:00 — 22:00</strong></li>
+              </ul>
+            </div>
+
+            <div class="reveal contact-info-stack">
+              <div data-testid="contact-address">
+                <div class="info-title"><i data-lucide="map-pin"></i><span>Adres</span></div>
+                <p class="big">Ahmedi Hani Mah.<br>Suat Sokak</p>
+                <p class="small">04400 Doğubayazıt / Ağrı</p>
+              </div>
+              <div data-testid="contact-phone">
+                <div class="info-title"><i data-lucide="phone"></i><span>Telefon</span></div>
+                <a href="tel:+905529330866" data-testid="contact-phone-link" class="big-link">0552 933 08 66</a>
+              </div>
+              <div data-testid="contact-instagram">
+                <div class="info-title"><i data-lucide="instagram"></i><span>Instagram</span></div>
+                <a href="https://instagram.com/rusahafcafe" target="_blank" rel="noopener noreferrer" data-testid="contact-instagram-link" class="ink-link big-link">@rusahafcafe</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer data-testid="footer" class="footer">
+      <div class="container footer-inner">
+        <a href="#hero" data-testid="footer-logo" class="footer-logo">
+          <span class="footer-logo-text">Ru-Sahaf Cafe</span>
+        </a>
+        <p data-testid="footer-copyright">© 2021 – Ru Sahaf Cafe | Doğubayazıt</p>
+        <a href="https://instagram.com/rusahafcafe" target="_blank" rel="noopener noreferrer" aria-label="Instagram" data-testid="footer-instagram" class="footer-ig">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="2.5" y="2.5" width="19" height="19" rx="5.5"></rect>
+            <circle cx="12" cy="12" r="4.5"></circle>
+            <circle cx="18" cy="6" r="1"></circle>
+          </svg>
+        </a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
