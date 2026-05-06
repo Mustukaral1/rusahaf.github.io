@@ -160,7 +160,7 @@ body::before {
   font-style: italic;
   font-size: 18px;
 }
-.hero-actions { margin-top: 32px; }
+.hero-actions { margin-top: 20px; }
 .btn-outline {
   display: inline-block;
   text-decoration: none;
@@ -174,19 +174,6 @@ body::before {
   transition: all .5s ease;
 }
 .btn-outline:hover { background: #c8932a; color: #2b2b2b; }
-
-.scroll-indicator {
-  inset: auto auto 32px 50% !important;
-  transform: translateX(-50%);
-  z-index: 10;
-  width: 24px;
-  height: 24px;
-  color: #c8932a;
-  opacity: .8;
-  transition: opacity .3s ease;
-}
-.scroll-indicator:hover { opacity: 1; }
-.scroll-indicator svg { width: 24px; height: 24px; animation: bounce 2s infinite; }
 
 .paper-texture { position: relative; }
 .paper-texture::before {
@@ -669,10 +656,6 @@ body::before {
   from { opacity: 0; transform: translateY(16px); }
   to { opacity: 1; transform: translateY(0); }
 }
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(6px); }
-}
 
 @media (min-width: 768px) {
   .nav-links { display: flex; }
@@ -707,7 +690,7 @@ body::before {
     padding-top: 112px;
   }
   .hero-actions {
-    margin-top: 24px;
+    margin-top: 16px;
   }
   .nav-logo-text {
     font-size: 22px;
