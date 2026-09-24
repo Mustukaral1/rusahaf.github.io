@@ -35,7 +35,7 @@
         <div class="hero-vignette" aria-hidden="true"></div>
         <div class="hero-content">
           <div data-testid="hero-logo" class="hero-logo">
-            <img src="/rusahaf.png" alt="Ru-Sahaf Cafe logosu" class="hero-logo-image" />
+            <img src="./rusahaf.png" alt="Ru-Sahaf Cafe logosu" class="hero-logo-image" onerror="this.onerror=null;this.src='./rusahaf.jpg';" />
           </div>
           <div class="hero-kicker">
             <span>Sahaf · Cafe · Doğubayazıt</span>
@@ -125,45 +125,116 @@
         </div>
       </section>
 
-      <section id="menu" data-testid="menu-section" class="menu">
+      <section id="menu" data-testid="menu-section" class="menu paper-texture">
         <div class="container">
-          <div class="divider-ornament reveal mb-10">Menü & İkramlar</div>
+          <div class="divider-ornament reveal mb-10">Menü</div>
           <div class="menu-head reveal">
-            <h2>Küçük <span>ikramlar</span>, büyük anılar.</h2>
-            <p>Bir fincan kahve, birkaç sayfa ve mırıldayan bir kedi — bazen yeterli olan bu.</p>
+            <h2>Lezzet <span>menümüz</span></h2>
+            <p>Kategori seçin, sakin bir şekilde göz gezdirin.</p>
           </div>
 
-          <div class="menu-grid">
-            <article data-testid="menu-item-coffee" class="reveal menu-card">
-              <div class="menu-image-wrap">
-                <img src="https://images.pexels.com/photos/14198834/pexels-photo-14198834.jpeg" alt="Türk Kahvesi">
-                <div class="menu-overlay"></div>
-                <div class="menu-meta"><span>Kahve</span></div>
-              </div>
-              <h3>Türk Kahvesi</h3>
-              <p>Odun ateşinden damıtılmış, köpüğü bol, eski usul.</p>
-            </article>
-            <article data-testid="menu-item-vegan" class="reveal menu-card">
-              <div class="menu-image-wrap">
-                <img src="https://images.unsplash.com/photo-1758610605872-3195caed0bdd" alt="Vegan İkramlar">
-                <div class="menu-overlay"></div>
-                <div class="menu-meta"><span>Mutfak</span></div>
-              </div>
-              <h3>Vegan İkramlar</h3>
-              <p>Yerel lezzetlerle hazırlanmış bitki bazlı tabaklar.</p>
-            </article>
-            <article data-testid="menu-item-books" class="reveal menu-card">
-              <div class="menu-image-wrap">
-                <img src="https://images.pexels.com/photos/33799079/pexels-photo-33799079.jpeg" alt="Sahaf Köşesi">
-                <div class="menu-overlay"></div>
-                <div class="menu-meta"><span>Atmosfer</span></div>
-              </div>
-              <h3>Sahaf Köşesi</h3>
-              <p>Eski kitaplar, kedi mırıltısı ve amber ışık.</p>
-            </article>
+          <div class="menu-tabs reveal" role="tablist" aria-label="Menü kategorileri">
+            <button type="button" class="menu-tab active" role="tab" aria-selected="true" data-menu-tab="yiyecekler">Yiyecekler</button>
+            <button type="button" class="menu-tab" role="tab" aria-selected="false" data-menu-tab="gelenekseller">Gelenekseller</button>
+            <button type="button" class="menu-tab" role="tab" aria-selected="false" data-menu-tab="tatlilar">Tatlılar</button>
+            <button type="button" class="menu-tab" role="tab" aria-selected="false" data-menu-tab="soguk">Soğuk İçecek</button>
+            <button type="button" class="menu-tab" role="tab" aria-selected="false" data-menu-tab="kahveler">Dünya Kahveleri</button>
           </div>
 
-          <p class="reveal menu-footnote">· Günlük değişen menü için Instagram'ı takip edin ·</p>
+          <div class="menu-panels">
+            <div class="menu-panel active reveal" data-menu-panel="yiyecekler" role="tabpanel">
+              <ul class="menu-list">
+                <li><span class="menu-name">Gün Tabağı</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">290 TL</span></li>
+                <li><span class="menu-name">Tost <em>(Karışık · Sucuklu · Kaşarlı)</em></span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">150 TL</span></li>
+              </ul>
+            </div>
+
+            <div class="menu-panel reveal" data-menu-panel="gelenekseller" role="tabpanel" hidden>
+              <ul class="menu-list">
+                <li><span class="menu-name">Türk Kahvesi</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">100 TL</span></li>
+                <li><span class="menu-name">Kürt Kahvesi</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">100 TL</span></li>
+                <li><span class="menu-name">Dibek Kahvesi</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">100 TL</span></li>
+                <li><span class="menu-name">Menengiç Kahvesi</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">100 TL</span></li>
+                <li><span class="menu-name">Çilekli Türk Kahvesi</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">110 TL</span></li>
+                <li><span class="menu-name">Çikolatalı Türk Kahvesi</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">110 TL</span></li>
+                <li><span class="menu-name">D. Sakızlı Türk Kahvesi</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">100 TL</span></li>
+                <li><span class="menu-name">Sıcak Çikolata</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">130 TL</span></li>
+                <li><span class="menu-name">Salep Çeşitleri</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">120 TL</span></li>
+                <li><span class="menu-name">Bitki Çayları</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">100 TL</span></li>
+              </ul>
+            </div>
+
+            <div class="menu-panel reveal" data-menu-panel="tatlilar" role="tabpanel" hidden>
+              <ul class="menu-list">
+                <li><span class="menu-name">Spoonfool</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">190 TL</span></li>
+                <li><span class="menu-name">Fıstık Rüyası</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">190 TL</span></li>
+                <li><span class="menu-name">Çikolata Aşkı</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">190 TL</span></li>
+                <li><span class="menu-name">Cheesecake</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">190 TL</span></li>
+                <li><span class="menu-name">Magnolya</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">180 TL</span></li>
+                <li><span class="menu-name">San Sebastian</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">220 TL</span></li>
+                <li><span class="menu-name">Lotus Pasta</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">190 TL</span></li>
+                <li><span class="menu-name">Trileçe</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">100 TL</span></li>
+                <li><span class="menu-name">Waffle</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">250 TL</span></li>
+                <li><span class="menu-name">Red Velvet Pasta</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">190 TL</span></li>
+                <li><span class="menu-name">Love Pasta</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">190 TL</span></li>
+                <li><span class="menu-name">Supangle</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">150 TL</span></li>
+                <li><span class="menu-name">Profiterol</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">150 TL</span></li>
+                <li><span class="menu-name">Sütlaç</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">150 TL</span></li>
+              </ul>
+            </div>
+
+            <div class="menu-panel reveal" data-menu-panel="soguk" role="tabpanel" hidden>
+              <ul class="menu-list">
+                <li><span class="menu-name">Ice Cappuccino</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">150 TL</span></li>
+                <li><span class="menu-name">Ice Americano</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">140 TL</span></li>
+                <li><span class="menu-name">Ice Latte</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">150 TL</span></li>
+                <li><span class="menu-name">Ice Mocha</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">150 TL</span></li>
+                <li><span class="menu-name">Ice Caramel Macchiato</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">150 TL</span></li>
+                <li><span class="menu-name">Ice Caramel Italian Latte</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">150 TL</span></li>
+                <li><span class="menu-name">Ice White Mocha</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">150 TL</span></li>
+                <li><span class="menu-name">Caramel Frappe</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">140 TL</span></li>
+                <li><span class="menu-name">Ice Irish Latte</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">150 TL</span></li>
+                <li><span class="menu-name">Milkshake</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">150 TL</span></li>
+                <li><span class="menu-name">Limonata</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">140 TL</span></li>
+                <li><span class="menu-name">Cool Lime</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">140 TL</span></li>
+                <li><span class="menu-name">Ice Tea · Cola</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">90 TL</span></li>
+                <li><span class="menu-name">Special Kokteyl</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">150 TL</span></li>
+                <li><span class="menu-name">Churchill</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">130 TL</span></li>
+                <li><span class="menu-name">Frozen</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">140 TL</span></li>
+                <li><span class="menu-name">Smoothie</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">150 TL</span></li>
+                <li><span class="menu-name">Blue Limonata</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">140 TL</span></li>
+                <li><span class="menu-name">Blue Soda</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">130 TL</span></li>
+                <li><span class="menu-name">Çilekli Limonata</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">140 TL</span></li>
+                <li><span class="menu-name">Hibiscus</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">140 TL</span></li>
+              </ul>
+            </div>
+
+            <div class="menu-panel reveal" data-menu-panel="kahveler" role="tabpanel" hidden>
+              <ul class="menu-list">
+                <li><span class="menu-name">Cappuccino</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">140 TL</span></li>
+                <li><span class="menu-name">Long Black</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">130 TL</span></li>
+                <li><span class="menu-name">Americano</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">130 TL</span></li>
+                <li><span class="menu-name">Latte</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">140 TL</span></li>
+                <li><span class="menu-name">Cortado</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">140 TL</span></li>
+                <li><span class="menu-name">Macchiato</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">140 TL</span></li>
+                <li><span class="menu-name">Esp. Macchiato</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">130 TL</span></li>
+                <li><span class="menu-name">Latte Macchiato</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">140 TL</span></li>
+                <li><span class="menu-name">Caramel Macchiato</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">150 TL</span></li>
+                <li><span class="menu-name">White Chocolate</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">150 TL</span></li>
+                <li><span class="menu-name">Mocha</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">150 TL</span></li>
+                <li><span class="menu-name">Flat White</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">140 TL</span></li>
+                <li><span class="menu-name">Filtre Kahve</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">130 TL</span></li>
+                <li><span class="menu-name">Espresso</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">100 TL</span></li>
+                <li><span class="menu-name">Red Eye</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">130 TL</span></li>
+                <li><span class="menu-name">Caramel Latte</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">150 TL</span></li>
+                <li><span class="menu-name">Vanilya Latte</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">150 TL</span></li>
+                <li><span class="menu-name">Hazelnut Latte</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">140 TL</span></li>
+                <li><span class="menu-name">Çay</span><span class="menu-dots" aria-hidden="true"></span><span class="menu-price">40 TL</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="reveal menu-footnote">· Fiyatlar değişiklik gösterebilir ·</p>
         </div>
       </section>
 
