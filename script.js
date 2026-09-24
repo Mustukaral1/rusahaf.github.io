@@ -61,6 +61,32 @@
   setInterval(next, 6500);
   renderReview();
 
+  const menuTabs = Array.from(document.querySelectorAll("[data-menu-tab]"));
+  const menuPanels = Array.from(document.querySelectorAll("[data-menu-panel]"));
+  if (menuTabs.length && menuPanels.length) {
+    const showMenu = (key) => {
+      menuTabs.forEach((tab) => {
+        const active = tab.getAttribute("data-menu-tab") === key;
+        tab.classList.toggle("active", active);
+        tab.setAttribute("aria-selected", active ? "true" : "false");
+      });
+      menuPanels.forEach((panel) => {
+        const active = panel.getAttribute("data-menu-panel") === key;
+        panel.classList.toggle("active", active);
+        if (active) {
+          panel.removeAttribute("hidden");
+        } else {
+          panel.setAttribute("hidden", "");
+        }
+      });
+    };
+    menuTabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        showMenu(tab.getAttribute("data-menu-tab"));
+      });
+    });
+  }
+
   if (window.lucide && typeof window.lucide.createIcons === "function") {
     window.lucide.createIcons();
   }
